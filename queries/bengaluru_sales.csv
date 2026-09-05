@@ -1,0 +1,4 @@
+sale_id,customer_name,product,category,quantity,price,city
+1,Rahul,Laptop,Electronics,2,55000.00,Bengaluru
+4,Sneha,Laptop,Electronics,1,60000.00,Bengaluru
+7,Vijay,Mouse,Accessories,6,800.00,Bengaluru
