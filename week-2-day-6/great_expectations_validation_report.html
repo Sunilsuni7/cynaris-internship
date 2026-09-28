@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Great Expectations Validation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.5;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Great Expectations Validation Report</h1>
+
+<p><strong>Dataset:</strong> sales_governance.csv</p>
+<p><strong>Validation status:</strong> FAILED as expected after intentional error injection</p>
+<p><strong>Purpose:</strong> Verify that Great Expectations detects injected data quality errors.</p>
+
+<table>
+    <tr>
+        <th>Expectation</th>
+        <th>Column</th>
+        <th>Status</th>
+    </tr>
+    
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>age</td>
+            <td>PASSED</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>age</td>
+            <td>FAILED</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>fare</td>
+            <td>FAILED</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>fare</td>
+            <td>PASSED</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_in_set</td>
+            <td>pclass</td>
+            <td>PASSED</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_in_set</td>
+            <td>sex</td>
+            <td>FAILED</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_in_set</td>
+            <td>embarked</td>
+            <td>PASSED</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_in_set</td>
+            <td>survived</td>
+            <td>PASSED</td>
+        </tr>
+        
+</table>
+
+</body>
+</html>
