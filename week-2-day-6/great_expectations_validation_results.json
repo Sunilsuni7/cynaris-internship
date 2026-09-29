@@ -1,0 +1,330 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "age"
+        },
+        "meta": {},
+        "id": "0b8414c6-e94f-4d1f-bbfb-b2f1b35f9c6f",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "age",
+          "min_value": 0.0,
+          "max_value": 100.0
+        },
+        "meta": {},
+        "id": "8f6f8836-7735-494e-a44b-a539dc39ecd6",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 1,
+        "unexpected_percent": 0.12903225806451613,
+        "partial_unexpected_list": [
+          150.0
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.12903225806451613,
+        "unexpected_percent_nonmissing": 0.12903225806451613,
+        "partial_unexpected_counts": [
+          {
+            "value": 150.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "fare",
+          "min_value": 0.0
+        },
+        "meta": {},
+        "id": "5f17d1a2-9334-4ecd-9b07-a0f2fcc59cf7",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 1,
+        "unexpected_percent": 0.12903225806451613,
+        "partial_unexpected_list": [
+          -100.0
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.12903225806451613,
+        "unexpected_percent_nonmissing": 0.12903225806451613,
+        "partial_unexpected_counts": [
+          {
+            "value": -100.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          1
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "fare"
+        },
+        "meta": {},
+        "id": "6953319c-bc79-4ede-b6da-d6b63d40d95a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "pclass",
+          "value_set": [
+            1,
+            2,
+            3
+          ]
+        },
+        "meta": {},
+        "id": "ca7275b1-7427-49b3-91ca-c5f3c8523247",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "sex",
+          "value_set": [
+            "male",
+            "female"
+          ]
+        },
+        "meta": {},
+        "id": "df4d5992-dc2f-40ff-b160-a25fcf864943",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 1,
+        "unexpected_percent": 0.12903225806451613,
+        "partial_unexpected_list": [
+          "unknown"
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.12903225806451613,
+        "unexpected_percent_nonmissing": 0.12903225806451613,
+        "partial_unexpected_counts": [
+          {
+            "value": "unknown",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          2
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "embarked",
+          "value_set": [
+            "C",
+            "Q",
+            "S"
+          ]
+        },
+        "meta": {},
+        "id": "091ab9d8-024b-42f0-9937-83a5a964afc7",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "titanic_pandas_source-titanic_dataset",
+          "column": "survived",
+          "value_set": [
+            0,
+            1
+          ]
+        },
+        "meta": {},
+        "id": "dadec338-ddcb-4000-8a6f-ff0218f6a09e",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 775,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "titanic_data_quality_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 8,
+    "successful_expectations": 5,
+    "unsuccessful_expectations": 3,
+    "success_percent": 62.5
+  },
+  "meta": {
+    "great_expectations_version": "1.23.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260923T120134.681242Z",
+      "pandas_data_fingerprint": "c03cd3255685ab94eed426a34a2ff686"
+    },
+    "active_batch_definition": {
+      "datasource_name": "titanic_pandas_source",
+      "data_connector_name": "fluent",
+      "data_asset_name": "titanic_dataset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    },
+    "validation_id": "fb682dc3-e5c6-4b0b-b3b7-c9aeac9c7272",
+    "checkpoint_id": null,
+    "run_id": {
+      "run_name": null,
+      "run_time": "2026-09-23T17:31:35.133290+05:30"
+    },
+    "validation_time": "2026-09-23T12:01:35.133290+00:00",
+    "batch_parameters": {
+      "dataframe": "<DATAFRAME>"
+    }
+  },
+  "id": null
+}

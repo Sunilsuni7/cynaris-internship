@@ -1,0 +1,90 @@
+dataContractSpecification: 0.9.3
+
+id: titanic-governance-v1
+
+info:
+  title: Titanic Data Governance Contract
+  version: 1.0.0
+  owner: Sunil
+  producer: Sunil
+  consumer: BI dashboard
+  description: Data quality and governance contract for the cleaned Titanic dataset.
+
+models:
+  passenger_data:
+    fields:
+      survived:
+        type: integer
+        required: true
+        allowed_values: [0, 1]
+
+      pclass:
+        type: integer
+        required: true
+        allowed_values: [1, 2, 3]
+
+      sex:
+        type: string
+        required: true
+        allowed_values: [male, female]
+
+      age:
+        type: number
+        required: true
+        minimum: 0
+        maximum: 100
+
+      sibsp:
+        type: integer
+        required: true
+        minimum: 0
+
+      parch:
+        type: integer
+        required: true
+        minimum: 0
+
+      fare:
+        type: number
+        required: true
+        minimum: 0
+
+      embarked:
+        type: string
+        required: false
+        allowed_values: [C, Q, S]
+
+      class:
+        type: string
+        required: true
+
+      who:
+        type: string
+        required: true
+
+      adult_male:
+        type: boolean
+        required: true
+
+      embark_town:
+        type: string
+        required: false
+
+      alive:
+        type: string
+        required: true
+
+      alone:
+        type: boolean
+        required: true
+
+governance:
+  pii_present: false
+  classification: internal
+  quality_dimensions:
+    - completeness
+    - accuracy
+    - consistency
+    - timeliness
+    - uniqueness
+    - validity
